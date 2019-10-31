@@ -1,0 +1,113 @@
+* {
+    background-color: #062f47;
+    color: white;
+    font-family: Acme;
+}
+
+
+/**Fonts**/
+
+@font-face {
+    font-family: abeezee;
+    src: url(../fonts/ABeeZee-Regular.otf)
+}
+
+@font-face {
+    font-family: abeezeeitalic;
+    src: url(../fonts/ABeeZee-Italic.otf)
+}
+
+@font-face {
+    font-family: Acme;
+    src: url(../fonts/Acme-Regular.ttf)
+}
+
+/****/
+
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+#game {
+    max-width: 90vw;
+    height: 20vh;
+    margin-top: 10%;
+    margin-bottom: 0px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgb(86, 165, 235, 0.25);
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px lightgrey;
+}
+
+.choice-num {
+    padding:  24px 20px;
+    background-color: #14c245;
+}
+
+.choice-text {
+    padding: 15px;
+    background-color: white;
+    color: #062f47;
+    font-size: 15px;
+    width: 100%;
+}
+
+.correct {
+    background-color: #28a745;
+}
+  
+.incorrect {
+    background-color: #dc3545;
+}
+
+
+/*Media Queries*/
+
+
+
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+  
+.hud-main-text {
+    text-align: center;
+}
+  
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+  
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
+    width: 0%;
+}
+  
+
+  

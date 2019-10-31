@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JarraBawa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="home">
+        <h1 style="font-family: abeezeeitalic;">JarraBawa</h1>
+        <a href="pages/quiz.html" class="btn" role="button">Play</a></br>
+        <h2 id="quotes"></h2>
+        </div>
+    </div>
+    <script>
+        const display = document.getElementById("quotes");
+        var quotes = [
+            "We may encounter many defeats but we must not be defeated." + " " + "- Maya Angelou",
+            "A man who dares to waste one hour of time has not discovered the value of life." + " "  + "- Charles Darwin",
+            "Dont\'t let yesterday take too much of today." + " " + "- Will Rogers",
+            "People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do" + " " + "- Rob Siltanen"
+        ];
+        var randomNum = Math.floor(Math.random() * quotes.length);
+        display.innerText = quotes[randomNum];
+    </script>
+</body>
+</html>

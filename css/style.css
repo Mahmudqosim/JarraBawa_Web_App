@@ -1,0 +1,49 @@
+* {
+    background-color: #062f47;
+    color: white;
+    font-family: Acme;
+}
+
+
+/**Fonts**/
+
+@font-face {
+    font-family: abeezee;
+    src: url(../fonts/ABeeZee-Regular.otf)
+}
+
+@font-face {
+    font-family: abeezeeitalic;
+    src: url(../fonts/ABeeZee-Italic.otf)
+}
+
+@font-face {
+    font-family: Acme;
+    src: url(../fonts/Acme-Regular.ttf)
+}
+
+/****/
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+#home {
+    width: 50vw;
+    height: 40vh;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.btn {
+    background-color: #14c245;
+    margin-top: 20px;
+    color: white;
+    width: 150px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #14c245;
+}
