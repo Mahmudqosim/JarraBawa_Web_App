@@ -75,7 +75,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem("finalScore", score);
-    return window.location.assign("pages/endgame.html");
+    return window.location.assign("https://mahmudqosim.github.io/JarraBawa_Web_App/pages/endgame.html");
   }
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
